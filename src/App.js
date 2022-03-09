@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Colours from './components/Colours';
 import React from 'react';
 import SingleColour from './components/SingleColour';
+import SomeOtherPath from './components/SomeOtherPath';
 
   function App() {
     return (
@@ -17,6 +18,7 @@ import SingleColour from './components/SingleColour';
             <Route path='/' element={<Home/>} />
             <Route path='/colours' element={<Colours/>} />
             <Route path='/colours/:colour_name' element={<SingleColour/>}/>
+            <Route path='*' element={<SomeOtherPath/>}/>
           </Routes>
         </div>
       </BrowserRouter>
