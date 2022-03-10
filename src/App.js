@@ -5,7 +5,7 @@ import Home from './components/Home';
 import Colours from './components/Colours';
 import React from 'react';
 import SingleColour from './components/SingleColour';
-import SomeOtherPath from './components/SomeOtherPath';
+import ErrorPage from './components/ErrorPage';
 
   function App() {
     return (
@@ -18,7 +18,7 @@ import SomeOtherPath from './components/SomeOtherPath';
             <Route path='/' element={<Home/>} />
             <Route path='/colours' element={<Colours/>} />
             <Route path='/colours/:colour_name' element={<SingleColour/>}/>
-            <Route path='*' element={<SomeOtherPath/>}/>
+            <Route path='*' element={<ErrorPage/>}/>
           </Routes>
         </div>
       </BrowserRouter>
