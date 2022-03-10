@@ -6,7 +6,7 @@ export default function SomeOtherPath() {
     return (
         
         <h2>
-            {`This is NOT the path you are looking for!`}
+            {`These are NOT the paths you are looking for!`}
         </h2>
     )
 }
